@@ -27,7 +27,7 @@ export default class LandingPage extends React.Component {
 
         return (
             <div className="container landing-page-wrapper">
-                <Exclusive name="landing">
+                <Exclusive name="os-landing">
                     <div>
                         <h1 className="title">{T.translate("landing.title")}</h1>
 
