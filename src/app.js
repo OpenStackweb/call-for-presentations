@@ -83,7 +83,7 @@ class App extends React.PureComponent {
 
     render() {
         let { isLoggedUser, onUserAuth, doLogout, getUserInfo, member, speaker, backUrl, loading, publicSelectionPlan, publicSummit} = this.props;
-        let profile_pic = speaker ? speaker.member.pic : (member ? member.pic : '');
+        let profile_pic = speaker ? speaker.member.pic : (member ? member.pic : null);
 
         let header_title = '';
         let header_subtitle = '';
