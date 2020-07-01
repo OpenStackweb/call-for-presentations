@@ -27,7 +27,7 @@ export default class SelectionProcessPage extends React.Component {
                 </p>
                 <p>
                     {T.translate("selection_process.paragraph_2")}
-                    <a href="https://openstackfoundation.formstack.com/forms/openstackberlin2018_programmingcommitteenom">
+                    <a href="https://openstackfoundation.formstack.com/forms/programmingcommitteenom_summit2020">
                         {T.translate("selection_process.nomination_form")}
                     </a>.
                 </p>
