@@ -4,7 +4,7 @@
     "sign_out"                : "Sign out",
     "log_in"                  : "Log in",
     "not_logged_in"           : "You are not logged in. Please log in to continue:",
-    "title"                   : "Would you like to present at the {summit_name}",
+    "title"                   : "Would you like to present at the {summit_name} ?",
     "steps_title"             : "Here are three steps you should take as a potential speaker:",
     "review_link"             : "Review the list of Summit Categories & Tracks.",
     "learn_link"              : "Learn about the selection process.",
