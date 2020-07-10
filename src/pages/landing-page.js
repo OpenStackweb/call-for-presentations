@@ -23,7 +23,10 @@ import { Exclusive } from 'openstack-uicore-foundation/lib/components'
 export default class LandingPage extends React.Component {
 
     render(){
+
         let {history, isLoggedUser, doLogin, initLogOut, picture, summit} = this.props;
+
+        if(!summit) return null;
 
         return (
             <div className="container landing-page-wrapper">
