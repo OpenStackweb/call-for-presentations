@@ -88,9 +88,9 @@ const profileReducer = (state = DEFAULT_STATE, action) => {
         case RECEIVE_SPEAKER_INFO: {
             let entity = {...payload.response};
 
-            for(var key in entity) {
-                if(entity.hasOwnProperty(key)) {
-                    entity[key] = (entity[key] == null) ? '' : entity[key] ;
+            for (var key in entity) {
+                if (entity.hasOwnProperty(key)) {
+                    entity[key] = (entity[key] == null) ? '' : entity[key];
                 }
             }
 
@@ -108,7 +108,7 @@ const profileReducer = (state = DEFAULT_STATE, action) => {
 
 
             if (entity.other_presentation_links.length < 5) {
-                let link = {title:'', link:''};
+                let link = {title: '', link: ''};
                 let missing = 5 - entity.other_presentation_links.length;
                 let presentation_links = [...entity.other_presentation_links];
                 presentation_links.length += missing;
@@ -116,7 +116,7 @@ const profileReducer = (state = DEFAULT_STATE, action) => {
                 entity.other_presentation_links = presentation_links;
             }
 
-            return {...state, entity: {...state.entity, ...entity}, errors: {} };
+            return {...state, entity: {...state.entity, ...entity}, errors: {}};
         }
         break;
         case PROFILE_PIC_ATTACHED: {

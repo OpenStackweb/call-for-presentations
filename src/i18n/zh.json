@@ -73,6 +73,7 @@
     "already_submitted"   : "您的演讲已经提交并等待专题负责人审阅",
     "confirm_submission"  : "确认我的提交",
     "got_it"              : "了解",
+    "other"               : "Other",
     "placeholders": {
       "select_one": "-- 选择一个 --"
     }

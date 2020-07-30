@@ -73,6 +73,7 @@
     "already_submitted"   : "Your presentation is submitted and awaiting review by Track Chairs",
     "confirm_submission"  : "Confirm my Submission",
     "got_it"              : "Got it",
+    "other"               : "Other",
     "placeholders": {
       "select_one": "-- Select one --"
     }
