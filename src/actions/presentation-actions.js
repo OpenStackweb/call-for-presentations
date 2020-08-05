@@ -273,6 +273,20 @@ const presentationErrorHandler = (err, res) => (dispatch) => {
                 () => { window.location = `${ window.location.origin}/presentations` }
             ));
             break;
+        case 412:
+            for (var [key, value] of Object.entries(err.response.body.errors)) {
+                if (isNaN(key)) {
+                    msg += key + ': ';
+                }
+
+                msg += value + '<br>';
+            }
+            Swal.fire("Validation error", msg, "warning");
+            dispatch({
+                type: VALIDATE,
+                payload: {errors: err.response.body.errors}
+            });
+            break;
         default:
             Swal.fire("ERROR", T.translate("errors.server_error"), "error");
     }
