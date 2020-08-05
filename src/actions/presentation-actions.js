@@ -91,7 +91,7 @@ export const savePresentation = (entity, nextStep) => (dispatch, getState) => {
             createAction(PRESENTATION_UPDATED),
             `${window.API_BASE_URL}/api/v1/summits/${summit.id}/presentations/${entity.id}`,
             normalizedEntity,
-            authErrorHandler,
+            presentationErrorHandler,
             entity
         )(params)(dispatch)
             .then((payload) => {
@@ -114,7 +114,7 @@ export const savePresentation = (entity, nextStep) => (dispatch, getState) => {
             createAction(PRESENTATION_ADDED),
             `${window.API_BASE_URL}/api/v1/summits/${summit.id}/presentations`,
             normalizedEntity,
-            authErrorHandler,
+            presentationErrorHandler,
             entity
         )(params)(dispatch)
             .then((payload) => {
