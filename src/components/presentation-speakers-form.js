@@ -61,8 +61,7 @@ class PresentationSpeakersForm extends React.Component {
     handleSpeakerClick(speakerId, speakerType, ev) {
         let {history, entity} = this.props;
         ev.preventDefault();
-
-        history.push(`/app/presentations/${entity.id}/speakers/${speakerId}`, {type: speakerType});
+        this.props.onSpeakerEdit(entity.id, speakerId, speakerType);
     }
 
     handleSpeakerRemove(speakerId, ev) {
@@ -79,13 +78,9 @@ class PresentationSpeakersForm extends React.Component {
 
     handleEditSpeaker(speakerId, speakerType, ev) {
         let {history, entity} = this.props;
-
         ev.preventDefault();
-
         this.props.onSpeakerEdit(entity.id, speakerId, speakerType);
-
-        //history.push(`/app/presentations/${entity.id}/speakers/${speakerId}`, {type: speakerType});
-    }
+  }
 
     handleAddSpeaker(speakerType, ev) {
         let {speaker} = this.state;
